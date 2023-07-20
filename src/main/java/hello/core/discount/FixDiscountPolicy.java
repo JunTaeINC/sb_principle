@@ -1,7 +1,7 @@
 package hello.core.discount;
 
-import hello.core.member.Grade;
-import hello.core.member.Member;
+import hello.core.member.domain.Grade;
+import hello.core.member.domain.Member;
 
 public class FixDiscountPolicy implements DiscountPolicy {
     private final int disCountFixAmount = 1000;

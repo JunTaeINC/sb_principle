@@ -1,4 +1,4 @@
-package hello.core.order;
+package hello.core.order.domain;
 
 public class Order {
     private Long memberId;

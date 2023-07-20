@@ -1,12 +1,10 @@
 package hello.core.member.service;
 
-import hello.core.member.Grade;
-import hello.core.member.Member;
-import hello.core.member.MemberService;
-import hello.core.member.MemberServiceImpl;
+import hello.core.member.domain.Grade;
+import hello.core.member.domain.Member;
 import org.junit.jupiter.api.Test;
 
-import static org.assertj.core.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class MemberServiceTest {
     MemberService memberService = new MemberServiceImpl();
@@ -14,7 +12,7 @@ class MemberServiceTest {
     @Test
     void join() {
         // given
-        Member member = new Member(1L, "member_A" , Grade.BASIC);
+        Member member = new Member(1L, "member_A", Grade.BASIC);
 
         // when
         memberService.join(member);

@@ -1,6 +1,6 @@
-package hello.core.member;
+package hello.core.member.service;
 
-import hello.core.member.Member;
+import hello.core.member.domain.Member;
 
 public interface MemberService {
     void join(Member member);
