@@ -18,8 +18,7 @@ public class BeanLifeCycleTest {
 	@Configuration
 	static class LifeCycleConfig {
 
-		@Bean(initMethod = "init", destroyMethod = "close")
-		// destroyMethod 추론기능에 의해 close, shutdown 메소드 명을 찾아서 실행 그래서 메소드 명이 close, shutdown 일 경우 생략가능
+		@Bean
 		public NetworkClient networkClient() {
 			NetworkClient networkClient = new NetworkClient();
 			networkClient.setUrl("https://www.naver.com");
